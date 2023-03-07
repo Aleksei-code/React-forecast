@@ -4,14 +4,14 @@ const CityComponent = (props) => {
   const { setCity, fetchWeather, error } = props;
   return (
     <>
-      <p>Введите название города</p>
+      <p>Enter your city name</p>
       <form onSubmit={fetchWeather}>
         <input
           onChange={(e) => setCity(e.target.value)}
-          placeholder="Введите название..."
+          placeholder="City"
         />
         <button className="card-more" type="submit">
-          Найти
+          Find
         </button>
       </form>
       {error && <p className="error">{error}</p>}

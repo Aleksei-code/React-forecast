@@ -10,7 +10,7 @@ function App() {
   const fetchWeather = async (e) => {
     e.preventDefault();
     if (!city) {
-      setError("Ошибка: пустой запрос");
+      setError("Error: empty request");
     } else {
       let cityFetch = city.trim();
       axios
@@ -22,11 +22,11 @@ function App() {
         })
         .catch((err) => {
           if (err.response) {
-            setError("Город не найден");
+            setError("City not found");
           } else if (err.request) {
-            setError("Ошибка сети, повторите позже");
+            setError("Network error");
           } else {
-            setError("Неизвестная ошибка, обратитесь к администратору");
+            setError("Unknown error");
           }
         });
     }
@@ -36,7 +36,7 @@ function App() {
       <div className="card">
         <span className="card-border"></span>
         <div className="content">
-          <h2>Прогноз погоды</h2>
+          <h2>Weather forecast</h2>
           {city && weather ? (
             <WeatherComponent weather={weather} city={city} />
           ) : (
