@@ -1,4 +1,4 @@
-Прогноз погоды (React + axios + api.openweathermap.org)
+Weather forecast (React + axios + api.openweathermap.org)
 
-Для запуска:
+For a quick start:
 ### `npm i && npm start`
