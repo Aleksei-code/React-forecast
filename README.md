@@ -1,4 +1,4 @@
-Weather forecast (React + axios + api.openweathermap.org)
+Neon Weather forecast (React + axios + api.openweathermap.org)
 
 ![picture of the project](https://github.com/Aleksey-hub-z/React-forecast/blob/main/image/project.png)
 
